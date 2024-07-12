@@ -2,32 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.post {
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: rgb(237, 230, 230);
+}
+
+h6 {
+  font-weight: bold;
+}
+
+.title {
+  border: solid rgb(237, 230, 230) 1px;
+  display: block;
+  padding: 5px;
+  margin-top: 20px;
+  width: 400px;
+  min-height: 40px;
+}
+
+.notify {
+  position: fixed;
+  top: 30px;
+  margin: 0px auto;
+  background-color: rgb(237, 230, 230);
+  left: 40vw;
+}
+
+.bodyy {
+  border: solid rgb(237, 230, 230) 1px;
+  display: block;
+  padding: 5px;
+  width: 400px;
+  resize: vertical;
+  margin-top: 20px;
+  min-height: 200px;
+}
+
+form {
+  background-color: rgb(237, 230, 230);
+  padding: 20px;
+}
+
+button {
+  width: 400px;
+  background-color: white;
+  padding: 5px 0px;
+  margin-top: 10px;
+  border: solid rgb(120, 120, 234) 1px;
+}
+
+.cb1 {
+  width: 100px;
+  margin-top: 10px;
+}
+.cb {
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
