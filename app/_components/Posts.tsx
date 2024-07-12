@@ -171,7 +171,11 @@ const Post = () => {
   return (
     <div>
       {postsError && postsError}
-      <div className="notify">{postSuccess && postSuccess}</div>
+      <div className="notify">
+        {postSuccess ? (
+          <p className="succe">{postSuccess && postSuccess}</p>
+        ) : null}
+      </div>
 
       <form onSubmit={handleSubmit}>
         <h4>{sendButton && "Create A New Post"}</h4>
