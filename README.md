@@ -1,1 +1,1 @@
-[Click here](https://vercel.com/malwandes-projects/medical-departures-test) to view the project
+[Click here](https://medical-departures-test.vercel.app/) to view the project
